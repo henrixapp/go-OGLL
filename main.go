@@ -130,8 +130,8 @@ func executeInstructions(term []rune) {
 			} else {
 				ZurZeit = Stack[len(Stack)-1]
 				angle = StackAngle[len(Stack)-1]
-				Stack = Stack[:len(Stack)-2]
-				StackAngle = StackAngle[:len(StackAngle)-2]
+				Stack = Stack[:len(Stack)-1]
+				StackAngle = StackAngle[:len(StackAngle)-1]
 				Strips = append(Strips, Aktueller)
 				Aktueller = make(Strip, 0)
 			}
