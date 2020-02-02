@@ -20,7 +20,7 @@ jobs:
     working_directory: /go/src/github.com/henrixapp/go-OGLL
     steps:
       - checkout
-
+      - run: apt install -y libgl1-mesa-dev xorg-dev
       # specify any bash command here prefixed with `run: `
       - run: go get -v -t -d ./...
       - run: go test -v ./...
