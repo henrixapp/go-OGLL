@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       # specify the version
-      - image: circleci/golang:1.13
+      - image: henrixapp/go-with-x11:1.13
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -20,7 +20,6 @@ jobs:
     working_directory: /go/src/github.com/henrixapp/go-OGLL
     steps:
       - checkout
-      - run: apt install -y libgl1-mesa-dev xorg-dev
       # specify any bash command here prefixed with `run: `
       - run: go get -v -t -d ./...
       - run: go test -v ./...
