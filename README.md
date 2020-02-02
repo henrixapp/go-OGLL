@@ -1,5 +1,8 @@
 # go-OGLL
-A golang-based lindenmayer system implementation WIP
+[![CircleCI](https://circleci.com/gh/henrixapp/go-OGLL.svg?style=svg)](https://circleci.com/gh/henrixapp/go-OGLL)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c33175acaa9c2e493680/maintainability)](https://codeclimate.com/github/henrixapp/go-OGLL/maintainability)
+
+> A golang-based lindenmayer system implementation WIP
 
 ## Manual
 
@@ -18,5 +21,4 @@ Use `WASD` to move around. Use `Q` and `E` to zoom.
 ```
 ![Snowflake](samples/snowflake.png)
 
-## More advanced and colored: Dragon Curve
 
